@@ -1,0 +1,131 @@
+// *{margin: 0; padding: 0;}
+// a{text-decoration: none;}
+// li{list-style: none;}
+
+// body{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+// }
+// .calender{
+//     width: 600px;
+//     margin: 50px;
+//     .calHead{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         .yearMonth{
+//             font-size: 35px;
+//         }
+//         .claNav{
+//             display: flex;
+//             border: 1px solid #333333;
+//             border-radius: 5px;
+//             .calBtn{
+//                 width: 28px;
+//                 height: 30px;
+//                 border: none;
+//                 font-size: 16px;
+//                 line-height: 34px;
+//                 background-color: transparent;
+//                 cursor: pointer;
+//             }
+//             .go_today{
+//                 width: 75px;
+//                 border-left: 1px solid #333333;
+//                 border-right: 1px solid #333333;
+//             }
+//         }
+//     }
+// }
+// .calMain{
+//     .days{
+//         display: flex;
+//         margin: 25px 0 10px;
+//         .day{
+//             width: calc(100% / 7);
+//             text-align: center;
+//         }
+//     }
+//     .dates{
+//         display: flex;
+//         flex-flow: row wrap;
+//         height: 500px;
+//         border-top: 1px solid #333333;
+//         border-right: 1px solid #333333;
+//         .date{
+//             width: calc(100% / 7);
+//             padding: 15px;
+//             text-align: right;
+//             border-bottom: 1px solid #333333;
+//             border-left: 1px solid #333333;
+//         }
+//     }
+// }
+.calender{
+    width: 600px;
+    padding-top: 200px;
+    margin: 0 auto;
+    .calHead{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .yearMonth{
+            font-size: 2rem;
+        }
+    }
+    .calMain{
+        .days{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0 10px;
+            
+            .day{
+                text-align: center;
+                width: calc(100% / 7);
+                &:nth-child(7n + 1){
+                    color: rgb(205, 0, 24);
+                }
+                &:nth-child(7n){
+                    color: rgb(7, 0, 205);
+                }
+            }
+        }
+        .dates{
+            display: flex;
+            flex-flow: row wrap;
+            border-left: 1px solid #333333;
+            // border-right: 1px solid #333333;
+            border-top: 1px solid #333333;
+            height: 500px;
+            .date{
+                width: calc(100% / 7 - 1px);
+                // border 1px을 빼줘야 7일 정렬이 됨
+                text-align: right;
+                border-right: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                &:nth-child(7n + 1){
+                    color: rgb(205, 0, 24);
+                }
+                &:nth-child(7n){
+                    color: rgb(7, 0, 205);
+                }
+                p{
+                    padding-right: 10px;
+                    height: 100%;
+                    margin: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.other{
+    opacity: 0.3;
+    font-weight: 300!important;
+}
+.today{
+    border: 1px solid rgb(255 4 4);
+}

@@ -1,0 +1,117 @@
+.tweenbox {
+	width:100px;
+ 	height:100px;
+	border:2px solid crimson;
+	background:lightcoral;
+	box-sizing:border-box
+}
+.tweenbox1 {
+	width:100px;
+ 	height:100px;
+	border:2px solid crimson;
+	background:lightcoral;
+	box-sizing:border-box
+}
+.tweenbox2 {
+	width:100px;
+ 	height:100px;
+	border:2px solid crimson;
+	background:lightcoral;
+	box-sizing:border-box
+}
+.tweenbox3 .btn {
+	display:inline-block;
+	padding:5px 10px 6px;
+	background-color:#333;
+	font-size:13px;
+	color:#fff;
+	text-decoration:none
+}
+.tweenbox3 .content {
+	padding:100px 30px;
+	border:1px solid #000
+}
+.tweenbox3 .content ul {display:flex}
+.tweenbox3 .content ul li.tweenboxli {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100px;
+	height:100px;
+	margin:20px;
+	background:lightcoral;
+	border-radius:10px;
+	list-style:none
+}
+.tweenbox4 ul {
+	display:flex;
+	justify-content:center;
+}
+.tweenbox4 ul li.tweenbox4-1 {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100px;
+	height:100px;
+	margin:20px;
+	background:lightcoral;
+	border-radius:10px;
+	list-style:none
+}
+.tweenbox5 ul {
+	display:flex;
+	justify-content:center
+}
+.tweenbox5 ul li.tweenbox5-1 {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100px;
+	height:100px;
+	margin:20px;
+	background:lightcoral;
+	border-radius:10px;
+	color:#fff;
+	list-style:none
+}
+.tweenbox6,
+.tweenbox7 {
+    width:100px;
+    height:100px;
+    border:2px solid crimson;
+    background:lightcoral;
+    box-sizing:border-box
+}	
+
+.tweenbox8 .tweenbox8-1 {
+    width:100px;
+    height:100px;
+    border:2px solid crimson;
+    background:lightcoral;
+    box-sizing:border-box
+}
+.tweenbox8 .motion-message{margin:30px 10px}
+
+
+.tweenbox9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color:lightcoral;
+    border: 1px solid orangered;
+  }
+.tweenbox9 .box {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 35px;
+    background-color:peachpuff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 2.2;
+  }
+.tweenbox9 .box.top {top: 0;}
+.tweenbox9 .box.bottom {bottom: 0;}

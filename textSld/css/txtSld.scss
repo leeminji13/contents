@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+.wrap{
+    height: 1800px;
+    .cover{
+        width: 100vw;
+        margin-top: 10rem;
+        display: flex;
+        &:nth-child(1){
+            margin-top: 5vh;
+            background-color: antiquewhite;
+        }
+        &:nth-child(2){
+            justify-content: flex-end;
+            background-color: beige;
+        }
+        p{
+            display: flex;
+            padding: 3rem;
+            font-size: 5rem;
+            white-space: nowrap;
+        }
+    }
+}
+

@@ -1,0 +1,11 @@
+.count {
+  width: 370px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background: #febf00;
+  border-radius: 1rem;
+  color: #000;
+}/*# sourceMappingURL=count.css.map */

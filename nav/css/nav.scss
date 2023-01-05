@@ -1,0 +1,144 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.vh100{
+    height:100vh;
+}
+.overhidden{
+    overflow: hidden;
+}
+/////////////////////////////////////상단헤더
+// .header{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100px;
+//     background-color: rgba(255, 255, 255, 0.41);
+//     .headWrap{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         height: 100%;
+//         width: 1800px;
+//         margin: 0 auto;
+//         .nav{
+//             cursor: pointer;
+//             z-index: 11;
+//             .line{
+//                 width: 45px;
+//                 height:45px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: space-between;
+//                 div{
+//                     width: 100%;
+//                     height: 2px;
+//                     background-color: white;
+//                 }
+//             }
+//         }
+//     }
+//     .navigation{
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         height: 100vh;
+//         background-color: rgb(183, 183, 183);
+//         display: flex;
+//         align-items: center;
+//         transform: translateY(-100%);
+//         transition: 1s;
+//         .d1ul{
+//             padding-left: 300px;
+//             .d1li{
+//                 padding: 2rem 0;
+//                 a{
+//                     p{
+//                         font-size: 2rem;
+//                         font-weight: 600;
+//                         color: white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .open{
+//         transform: translateY(0%);
+//     }
+// }
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    .logo{
+        width: 1800px;
+        margin: 0 auto;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.334);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 11;
+        .line{
+            width: 50px;
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+        }
+    }
+    .navigation{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgb(183, 183, 183);
+        display: flex;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 1s;
+        .d1ul{
+            padding-left: 300px;
+            .d1li{
+                padding: 2rem 0;
+                a{
+                    p{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .open{
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}

@@ -1,0 +1,63 @@
+.calender {
+  width: 600px;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+.calender .calHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calender .calHead .yearMonth {
+  font-size: 2rem;
+}
+.calender .calMain .days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 10px;
+}
+.calender .calMain .days .day {
+  text-align: center;
+  width: 14.2857142857%;
+}
+.calender .calMain .days .day:nth-child(7n+1) {
+  color: rgb(205, 0, 24);
+}
+.calender .calMain .days .day:nth-child(7n) {
+  color: rgb(7, 0, 205);
+}
+.calender .calMain .dates {
+  display: flex;
+  flex-flow: row wrap;
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  height: 500px;
+}
+.calender .calMain .dates .date {
+  width: calc(14.2857142857% - 1px);
+  text-align: right;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+.calender .calMain .dates .date:nth-child(7n+1) {
+  color: rgb(205, 0, 24);
+}
+.calender .calMain .dates .date:nth-child(7n) {
+  color: rgb(7, 0, 205);
+}
+.calender .calMain .dates .date p {
+  padding-right: 10px;
+  height: 100%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.other {
+  opacity: 0.3;
+  font-weight: 300 !important;
+}
+
+.today {
+  border: 1px solid rgb(255, 4, 4);
+}/*# sourceMappingURL=cal.css.map */

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.wrap {
+  height: 1800px;
+}
+.wrap .cover {
+  width: 100vw;
+  margin-top: 10rem;
+  display: flex;
+}
+.wrap .cover:nth-child(1) {
+  margin-top: 5vh;
+  background-color: antiquewhite;
+}
+.wrap .cover:nth-child(2) {
+  justify-content: flex-end;
+  background-color: beige;
+}
+.wrap .cover p {
+  display: flex;
+  padding: 3rem;
+  font-size: 5rem;
+  white-space: nowrap;
+}/*# sourceMappingURL=txtSld.css.map */

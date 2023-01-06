@@ -1,4 +1,4 @@
-const date = new Date();
+let date = new Date();
 
 const renderCalender = () => {
     const viewYear = date.getFullYear();
@@ -23,11 +23,12 @@ const renderCalender = () => {
     // 자닌달 날짜와 다음달 날짜는 상황에 따라 그릴 수도, 않을 수도 있기 때문에 
     // 일단 초기값은 빈 배욜로 둠
     // 1.Array(n)으로 배열을 만들면 길이가 n인 배열이 생성(이때 모든 요소들은 undefined)
-    // 2.그런데 모든 요소들이 empty값이기 때문에 keys()메서드를 활용하면 0부처 n-1까지의
+    // 2.그런데 모든 요소들이 empty값이기 때문에 keys()메서드를 활용하면 0부터  n-1까지의
     // Array Iterator가 생성되는데,
     // 전개 구문을 통해서 이 Array Iterator를 배열로 만들어 내면 0부터 n-1까지의 배열을 얻어낼 수 있음
     // 그래서 이번 달 마지막 날짜 +1을 n에 전달해주고
-    // 제일 앞에있는 0을 없애기 위해서 slice메서드 활용
+    // 제일 앞에있는 0을 없애기 위해서 slice메서드 활용3+
+    
 
     if(PLDay !== 6){
         for(let i = 0; i < PLDay + 1; i++){

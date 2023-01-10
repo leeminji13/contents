@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data속성</title>
+</head>
+<body>
+    <button type="button" id="btn" data-code-id="1234" data-type="B">Button</button>
+
+    <script>
+        var codeId = document.getElementById('btn').dataset.codeId;
+        var type = document.getElementById('btn').dataset.type;
+
+        console.log(codeId)
+
+        // 자바스크립트에서는 dataset을 통하여 값을 가져올 수 있다.
+        // 속성에 접근하는 방법은 data 속성의 data-부분을 뺀 뒷부분만 사용하며
+        // 데이터 속성 이름에서 data를 뺀 뒤 camelCase로 변환.
+        // ex) data-color-type -> dataset.colorType
+    </script>
+</body>
+</html>

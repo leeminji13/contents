@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.main h1:after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  animation: cursor 0.9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #222;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}/*# sourceMappingURL=typing.css.map */

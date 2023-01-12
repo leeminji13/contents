@@ -256,6 +256,7 @@ $(function(){
    .setTween(wipeMotion)
    .setPin('.wrap')
    .addTo(controller)
-   .addIndicators();
+   // .addIndicators();
+   // trigger, start 표시
 })
 // section wipe 응용2*****************

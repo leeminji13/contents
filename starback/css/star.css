@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backSky {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to right, #111, #0e0f19);
+  overflow: hidden;
+}
+.backSky .sky {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveStar 240s linear infinite;
+}
+.backSky .sky .star {
+  fill: #fff;
+  stroke: none;
+  stroke-width: 0;
+}
+
+@keyframes moveStar {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=star.css.map */
